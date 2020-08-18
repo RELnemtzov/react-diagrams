@@ -21,6 +21,7 @@
 		"nodes"
 	],
 	"scripts": {
+    "prepare": "yarn build:prod",
 		"build": "yarn build:clean && lerna run build --stream",
 		"build:es": "lerna run build:es --stream",
 		"build:prod": "yarn build:clean && lerna run build:prod --stream",
